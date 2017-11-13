@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World</title>
+
+</head>
+<body class="container">
+  <h1>Your Address:</h1>
+  <p id="address"> This is a Placeholder </p>
+
+   <h1>Your Ether balance (wei):</h1>
+  <p id="userbalance"> This is a Placeholder </p>
+
+   <h1>The deaddrop contract at address:</h1>
+  <p id="contract"> This is a Placeholder </p>
+  <h1>is holding the message:</h1>
+  <p id="message"> This is a Placeholder </p>
+
+  <h2>Change message</h2>
+
+  <br>
+  <label for="newPrice">New Price (minimum) <a id="minPrice"> This is a Placeholder </a>:</label><input type="text" id="newPrice" placeholder=""></input>
+  <br>
+  <label for="newMessage"> New Message:</label><input type="text" id="newMessage" placeholder="e.g., hello world!"></input>
+  <br>
+  <br><button id="postMessage" onclick="postMessage()">Post Message</button>
+  
+</body>
+<!-- the script below contains the web3.js library that lets your webpage's javascript (referenced below)
+interface with your ethereum client.. usually this can be downloaded from a website that hosts it -->
+<script src="./web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<!-- the index.js script that should be in the same folder. This code is important to look at
+because it defines how your website interacts with smart contracts and the blockchain -->
+<script src="./index.js"></script>
+</html>
